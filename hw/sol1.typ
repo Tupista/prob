@@ -47,4 +47,4 @@
 
 + 直接写出 $ P(C)&=1-P(overline(C))=1-P(union.big_(abs(V)=k) overline(B_V)) \ &>=1-sum_(abs(V)=k)P(overline(B_V)) \ &=1-binom(n,k)(1-1/2^k)^(n-k). $ 明所欲证. #h(1fr) $square$
 
-+ 沿用上一问的结论, 我们的目标是证明 $n~O(k^2 dot 2^k)$ 时 $P(C)>0.$ 令 $n:=alpha dot k^2 dot 2^k,$ 有 $ A:=ln(binom(n,k)(1-1/2^k)^(n-k))&=ln binom(n,k)+(n-k) ln (1-1/2^k) \ &<=k ln n+(n-k)(-1/2^k) \ &=k (2 ln k+k ln 2+ln alpha)+(alpha dot k^2 dot 2^k)(-1/2^k)+k/2^k \ &=2k ln k+k^2 ln 2+k ln alpha-alpha dot k^2+k/2^k \ &-> -oo quad (k "fixed," alpha->+oo) $ 于是对于任意的 $k,$ 总存在 $alpha$ 使得 $ P(C)&>=1-binom(n,k)(1-1/2^k)^(n-k) \ &=1-exp(A)>=1-exp(1/2) >0. $ 明所欲证. #h(1fr) $square$
++ 沿用上一问的结论, 我们的目标是证明 $n~O(k^2 dot 2^k)$ 时 $P(C)>0.$ 令 $n:=alpha dot k^2 dot 2^k,$ 有 $ A:=ln(binom(n,k)(1-1/2^k)^(n-k))&=ln binom(n,k)+(n-k) ln (1-1/2^k) \ &<=k ln n+(n-k)(-1/2^k) \ &=k (2 ln k+k ln 2+ln alpha)+(alpha dot k^2 dot 2^k)(-1/2^k)+k/2^k \ &=2k ln k+k^2 ln 2+k ln alpha-alpha dot k^2+k/2^k \ &-> -oo quad (alpha>ln 2, k->+oo) $ 于是对于充分大的 $k,$ 总能取 $alpha=10086$ 总使得 $ P(C)&>=1-binom(n,k)(1-1/2^k)^(n-k) \ &=1-exp(A)>=1-exp(1/2) >0. $ 明所欲证. #h(1fr) $square$
