@@ -30,3 +30,27 @@
 - 正态分布: 对于 $mu,sigma>0,$ 记 $X~N(mu,sigma^2)$ 表示 $ f(x)=1/(sqrt(2pi)sigma) dot exp(-(x-mu)^2/(2sigma^2)). $
 
   - *Proposition* $quad$ 若 $X~N(mu,sigma^2),$ 则 $U=(X-mu)\/sigma ~N(0,1).$
+
+    $U$ 也称为 $X$ 的标准化随机变量, 无论 $X$ 是否服从正太分布.
+
+    *Example* $quad$ 若 $X~B(1,0.5),$ 则 $P(U=-1)=P(U=1)=0.5.$
+
+- 指数分布: $X~"Exp"(lambda), f(x)=lambda e^(-lambda x) thick (x>=0).$
+
+  - 无记忆性: $P(X>s+t bar X>s)=P(X>t).$
+
+- 伽马分布: $X~Gamma(alpha, lambda), f(x)=lambda^alpha/Gamma(alpha) x^(alpha-1)e^(-lambda x).$
+
+  - 伽马函数 $Gamma(alpha)=integral_0^(+oo) x^(alpha-1) e^(-x)dif x, Gamma (alpha+1)=alpha Gamma(alpha).$
+
+  $E(X)=alpha\/lambda, E(X^2)=(alpha(alpha+1))\/lambda^2 thick ==> "Var"(x)=alpha\/lambda^2.$
+
+  - 指数分布是 $alpha=1$ 的特例.
+
+  - 特例 $alpha=n\/2, lambda=1\/2, n in NN^*.$ 这称为自由度为 $n$ 的卡方分布 $X~chi^2(n).$
+  
+#pagebreak()
+
+下面讨论连续变量函数的分布. 注意到概率密度函数不能直接相加.
+
+*Proposition* $quad$ 设 $X$ 为连续随机变量, $y=g(x)$ 严格单调, 其反函数 $h(y)$ 有连续导数, 则 $Y=g(X)$ 的概率密度函数为 $ f_Y (y)=f_X (h(y)) dot abs(h'(y)). $
