@@ -64,9 +64,9 @@
 
 + $ E(e^(t(Y-n)))&=integral_0^(+oo) e^(t(x-n)) (1\/2)^(n/2)/Gamma(n\/2) x^(n/2-1) e^(-1/2x) dif x \ &= 1/Gamma(n/2) e^(-t n)(1/2)^(n/2) integral_0^(+oo) x^(n/2-1)e^(-(1/2-t)x)dif x \ &=1/Gamma(n/2) e^(-t n) (1/2)^(n/2) Gamma(n/2) (1/2-t)^(-n/2) \ &=e^(-t n) (1/(1-2t))^(n/2) \ &=exp(-t n-n/2 ln (1-2t)) \ &<=exp(-t n-n/2(-2t-4t^2))=e^(2 t^2 n). $
 
-+ $ P(Y>=(1+Delta)n)&=P(Y-n>=Delta n) \ &=P(e^(t(Y-n))>=e^(t Delta n)) \ &<=exp(t Delta n-2t^2 n). $ 取 $t=1\/4$ 即证.
++ $ P(Y>=(1+Delta)n)&=P(Y-n>=Delta n) \ &=P(e^(t(Y-n))>=e^(t Delta n)) \ &<=exp(2t^2n-t Delta n). $ 取 $t=Delta\/4$ 即证.
 
-+ $ P(Y<=(1-Delta)n)&=P(e^(-t (Y-n))>=e^(-t Delta n)), $ 其中 $E(e^(-t(Y-n)))<=exp(2(-t)^2n)=exp(2t^2 n),$ 于是 #h(1fr) $ P(Y<=(1-Delta n))<=exp(-t Delta n-2t^2 n), $ 取 $t=1\/3$ 即证.
++ $ P(Y<=(1-Delta)n)&=P(e^(-t (Y-n))>=e^(t Delta n)), $ 其中 $E(e^(-t(Y-n)))<=exp(2(-t)^2n)=exp(2t^2 n),$ 于是 #h(1fr) $ P(Y<=(1-Delta n))<=exp(2t^2 n-t Delta n), $ 取 $t=Delta\/4$ 即证.
 
 == Question 6
 #linebreak()
